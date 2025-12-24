@@ -35,12 +35,10 @@ int main() {
     setRussianLocale();
 
     /// Александра Долгачева - тестирование поточного шифрования ARC4
-    cout << "\n=== ТЕСТИРОВАНИЕ ПОТОЧНОГО ШИФРОВАНИЯ (ARC4) ===" << endl;
 
     std::string message0 = "Secret Message";
     demonstrateStreamCipher(message0);
 
-    cout << "=== ТЕСТИРОВАНИЕ ПОТОЧНОГО ШИФРОВАНИЯ ЗАВЕРШЕНО ===" << endl;
 
     // Шипкова Виктория (блочное шифрование RC6)
     string message1 = "Hello, world!";
