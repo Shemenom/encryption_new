@@ -32,6 +32,16 @@ vector<string> readTestDataFromFile(const string& filename) {
 }
 
 int main() {
-    
+    setRussianLocale();
+
+    /// Александра Долгачева - тестирование поточного шифрования ARC4
+    cout << "\n=== ТЕСТИРОВАНИЕ ПОТОЧНОГО ШИФРОВАНИЯ (ARC4) ===" << endl;
+
+    std::string message0 = "Secret Message";
+    demonstrateStreamCipher(message0);
+
+    cout << "=== ТЕСТИРОВАНИЕ ПОТОЧНОГО ШИФРОВАНИЯ ЗАВЕРШЕНО ===" << endl;
+
+
     return 0;
 }
